@@ -154,13 +154,32 @@ let ShowBlogComponent = Vue.component('show-blog', {
 	},
 });
 
+let ShowBlogComponent1 = Vue.component('show-blog', {
+	template: '#show-blog-template1',
+});
+
+let ShowBlogComponent2 = Vue.component('show-blog', {
+	template: '#show-blog-template2',
+});
+
+let ShowBlogComponent3 = Vue.component('show-blog', {
+	template: '#show-blog-template3',
+});
+
+let ShowBlogComponent4 = Vue.component('show-blog', {
+	template: '#show-blog-template4',
+});
+
 // Use Vue-Router
 // 1). define routes.
 const routes = [
-	{ path: '/', redirect: '/blogs' },
-    { path: '/blogs', component: ListBlogsComponent },
-	{ path: '/blogs/new', component: AddBlogComponent },
-	{ path: '/blogs/:id', component: ShowBlogComponent },
+	{ path: '/', redirect: '/articles' },
+    { path: '/articles', component: ListBlogsComponent },
+	{ path: '/articles/new', component: AddBlogComponent },
+	{ path: '/articles/1', component: ShowBlogComponent1},
+	{ path: '/articles/2', component: ShowBlogComponent2},
+	{ path: '/articles/3', component: ShowBlogComponent3},
+	{ path: '/articles/4', component: ShowBlogComponent4},
 ];
 // 2) create Vue-Router instance
 const router = new VueRouter({
