@@ -172,7 +172,7 @@ const router = new VueRouter({
 new Vue({
 	el: '#app',
 	data: {
-		requestRootUrl: 'http://dfy8054.com/resources',
+		requestRootUrl: 'https://dfy8054.github.io/resources',
 		site: {
 			name: '基于内容的全文推荐系统',
 			description: 'Content-based Document Recommendation System'

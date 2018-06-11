@@ -45,10 +45,10 @@
     			<nav class="tabs is-boxed">
     				<div class="container">
     					<ul>
-    						<router-link to="/blogs" tag="li" active-class="is-active" exact>
+    						<router-link to="/articles" tag="li" active-class="is-active" exact>
     							<a href="javascript:;">文章</a>
     						</router-link>
-    						<router-link to="/blogs/new" tag="li" active-class="is-active" exact>
+    						<router-link to="/articles/new" tag="li" active-class="is-active" exact>
     							<a href="javascript:;">添加</a>
     						</router-link>
     					</ul>
@@ -177,7 +177,7 @@
     		<article class="media" v-for="(blog, index) of filterBlogs" v-bind:key="blog.id">
     			<div class="media-content">
     				<div class="content">
-    					<h3><router-link v-bind:to="'/blogs/' + blog.id">{{ blog.title}}</router-link></h3>
+    					<h3><router-link v-bind:to="'/articles/' + blog.id">{{ blog.title}}</router-link></h3>
     					<div>
     						{{ blog.body |  shortPostDesc }}
     					</div>
